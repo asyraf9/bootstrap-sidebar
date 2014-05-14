@@ -13,9 +13,10 @@ Current Limitations:
 2) This plugin is only tested for the left sidebar only. support for setting up a right sidebar exists but has never been tested yet. 
 3) Clicking outside the sidebar does not close the sidebar in smaller screens.
 4) On larger screens the sidebar is open(visible) by default and there is no way to change this at the moment. 
+5) you will have to write some custom css to enable fixed horizontal menu items
 
 Demo:
-
+checkout the Plunker here: http://plnkr.co/edit/vUoQOe?p=preview
 
 Usage:
 Usage is almost the same as the horizontal menubar collapse method: define a button on your top menubar that toggles the sidebar on and off like this:
