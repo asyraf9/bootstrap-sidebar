@@ -4,11 +4,13 @@ bootstrap-sidebar
 A responsive sidebar plugin for bootstrap 3. if your menus are too big to fit into a horizontal menubar, or you need to have a responsive sidebar that is compatible with bootstrap, then this is the plugin for you. 
 
 Features:
+
 1. on mobile sized screens, the sidebar becomes a slide in menu
 2. You can set the sidebar size for each screen size using standard bootstrap grid classes
 3. hardware accelerated slide-in animation.
 
 Current Limitations: 
+
 1. This sidebar assumes you have a fixed top menubar
 2. This plugin is only tested for the left sidebar only. support for setting up a right sidebar exists but has never been tested yet. 
 3. Clicking outside the sidebar does not close the sidebar in smaller screens.
