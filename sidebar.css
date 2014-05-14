@@ -1,0 +1,79 @@
+/* SET the media queries */
+/* All the default sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 51px;
+  bottom:0;
+  min-height: 100%;
+  max-height: none;
+  z-index: 1000;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .row .sidebar {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    /* sidebar-closed overrides */
+    max-height: none;
+    overflow: auto;
+    visibility: visible;
+  }
+
+  .row .sidebar.sidebar-left {
+    left: 0;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -moz-transform: none;
+  }
+
+ /*right sidebar is untested*/
+  .row .sidebar.sidebar-right {
+    right: 0;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -moz-transform: none;
+  }  
+}
+
+.sidebar-closed {
+  max-height: 100%;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.sidebar-animate {
+  -webkit-transition: -webkit-transform 300ms ease;
+  -moz-transition: -moz-transform 300ms ease;
+  transition: transform 300ms ease;
+}
+
+/* TODO: get the values in here */
+/* Left panel first! */
+.sidebar.sidebar-left {
+  -webkit-transform: translate3d(-100%,0,0);
+  -moz-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+}
+
+.sidebar.sidebar-left.sidebar-open {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -moz-transform: none;
+}
+
+/* TODO: TEST THIS! Right panel */
+.sidebar.sidebar-right {
+  -webkit-transform: translate3d(100%,0,0);
+  -moz-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+.sidebar.sidebar-right.sidebar-open {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -moz-transform: none;
+}
