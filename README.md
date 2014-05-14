@@ -2,6 +2,8 @@ bootstrap-sidebar
 =================
 
 A responsive sidebar plugin for bootstrap 3. if your menus are too big to fit into a horizontal menubar, or you need to have a responsive sidebar that is compatible with bootstrap, then this is the plugin for you. 
+(NOTE: Contributions are welcome! please issue a Pull Request. I'll include tests soon, please include tests in your code as well!)
+
 
 Features:
 
@@ -44,9 +46,9 @@ then define your sidebar column as:
 
 Note the important classes: 
 
-"sidebar" - main css class
-"sidebar-left" - to define the position of your sidebar and slide-in slide-out animations
-"sidebar-animation" - to tell sidebar to animate sliding in and out. Leave this out to disable animation
-"sidebar-closed" - this tells the sidebar to be closed by default on smaller screens. It is automatically open by default on larger screens
-"col-xs-7", "col-sm-3", "col-md-2" - you can freely set the column size across different screen sizes according to Bootstrap's Grid guidelines
+* "sidebar" - main css class
+* "sidebar-left" - to define the position of your sidebar and slide-in slide-out animations
+* "sidebar-animation" - to tell sidebar to animate sliding in and out. Leave this out to disable animation
+* "sidebar-closed" - this tells the sidebar to be closed by default on smaller screens. It is automatically open by default on larger screens
+* "col-xs-7", "col-sm-3", "col-md-2" - you can freely set the column size across different screen sizes according to Bootstrap's Grid guidelines
 
