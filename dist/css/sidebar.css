@@ -1,0 +1,133 @@
+/* All the default sidebar styles */
+/* toggle button settings */
+/* Note: this disables navbar-toggle class hide function. set visibility with the boostrap visible/hidden classes */
+.navbar .navbar-toggle.toggle-left {
+  float: left;
+  margin-left: 15px;
+}
+
+.navbar .navbar-toggle.toggle-right {
+  float: right;
+  margin-right: 15px;
+}
+
+.navbar .navbar-toggle.toggle-sidebar, [data-toggle="sidebar"] {
+  display: block;
+}
+
+/* sidebar settings */
+.sidebar {
+  position: fixed;
+  top: 51px;
+  bottom:0;
+  min-height: 100%;
+  max-height: none;
+  z-index: 1000;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.sidebar-left {
+  left: 0;
+}
+
+.sidebar-right {
+  right: 0;
+}
+
+/* css to override hiding the sidebar according to different screen sizes */  
+.row .sidebar.sidebar-left.sidebar-show-xs {
+  left: 0;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -moz-transform: none;
+}
+
+/*right sidebar is untested */
+.row .sidebar.sidebar-right.sidebar-show-xs {
+  right: 0;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -moz-transform: none;
+}  
+  
+@media (min-width: 768px) {
+  .row .sidebar.sidebar-left.sidebar-show-sm {
+    left: 0;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -moz-transform: none;
+  }
+
+ /*right sidebar is untested */
+  .row .sidebar.sidebar-right.sidebar-show-sm {
+    right: 0;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -moz-transform: none;
+  }  
+} 
+
+@media (min-width: 992px) {
+  .row .sidebar.sidebar-left.sidebar-show-md {
+    left: 0;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -moz-transform: none;
+  }
+  .row .sidebar.sidebar-right.sidebar-show-md {
+    right: 0;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -moz-transform: none;
+  }
+}
+
+@media (min-width: 1170px) {
+  .row .sidebar.sidebar-left.sidebar-show-lg {
+    left: 0;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -moz-transform: none;
+  }
+  .row .sidebar.sidebar-right.sidebar-show-lg {
+    right: 0;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -moz-transform: none;
+  }
+}
+
+/* animation class - optional: without it the sidebar would just pop in and out*/
+.sidebar-animate {
+  -webkit-transition: -webkit-transform 300ms ease;
+  -moz-transition: -moz-transform 300ms ease;
+  transition: transform 300ms ease;
+}
+
+/* Left panel positioning classes */
+.sidebar.sidebar-left {
+  -webkit-transform: translate3d(-100%,0,0);
+  -moz-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+}
+
+.sidebar.sidebar-left.sidebar-open {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -moz-transform: none;
+}
+
+/* TODO: TEST THIS! Right panel positioning classes*/
+.sidebar.sidebar-right {
+  -webkit-transform: translate3d(100%,0,0);
+  -moz-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+.sidebar.sidebar-right.sidebar-open {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -moz-transform: none;
+}
