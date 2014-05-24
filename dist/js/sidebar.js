@@ -33,7 +33,6 @@
     if (startEvent.isDefaultPrevented()) return
 
     this.$element
-      .removeClass('sidebar-closed')
       .addClass('sidebar-open')
 
     this.transitioning = 1
@@ -67,7 +66,6 @@
       this.transitioning = 0
       this.$element
         .trigger('hidden.bs.sidebar')
-        .addClass('sidebar-closed')
     }
 
     if (!$.support.transition) return complete.call(this)
@@ -102,7 +100,7 @@
     return this
   }
 
-  $(document).on('click.bs.sidebar.data-api', '[data-toggle=sidebar]', function (e) {
+  $(document).on('click.bs.sidebar.data-api', '[data-toggle="sidebar"]', function (e) {
     var $this = $(this), href
     var target = $this.attr('data-target')
         || e.preventDefault()
@@ -113,5 +111,21 @@
 
     $target.sidebar(option)
   })
+
+  $('html').on('click.bs.sidebar.autohide', function(event){
+    var $this = $(event.target);
+    var isButtonOrSidebar = $this.parents('.sidebar, [data-toggle="sidebar"]').length || $this.is('.sidebar, [data-toggle="sidebar"]');
+    if (isButtonOrSidebar) {
+      return;
+    } else {
+      var $target = $('.sidebar');
+      $target.each(function(i, trgt) {
+        var data = $(trgt).data('bs.sidebar');
+        if(data) {
+          $(trgt).sidebar('hide');
+        }
+      })
+    }
+  });
 }(jQuery);
 
