@@ -14,9 +14,11 @@ A responsive sidebar plugin for bootstrap 3. if your menus are too big to fit in
 
 Features:
 
-1. on mobile sized screens, the sidebar becomes a slide in menu
+1. Hardware accelerated slide-in animation
+2. You can set the sidebar to be permanently open for any screen size
 2. You can set the sidebar size for each screen size using standard bootstrap grid classes
-3. hardware accelerated slide-in animation.
+3. Clicking outside of the sidebars closes it automatically (if the sidebar is not open permanently)
+4. Right and Left sidebars now work. 
 
 Current Limitations: 
 
@@ -29,7 +31,7 @@ Current Limitations:
 Demo:
 checkout the Plunker here: http://plnkr.co/edit/vUoQOe?p=preview
 
-New v0.1.0 coming soon. 
+New v0.1.0 Plunker demo coming soon. 
 
 Usage:
 Usage is almost the same as the horizontal menubar collapse method: define a button on your top menubar that toggles the sidebar on and off like this:
@@ -58,6 +60,6 @@ Note the important classes:
 * "sidebar" - main css class
 * "sidebar-left" - to define the position of your sidebar and slide-in slide-out animations. Options are: sidebar-left, sidebar-right
 * "sidebar-animation" - (Optional) to tell sidebar to animate sliding in and out.
-* "sidebar-open-md" - (Optional) tells the sidebar to be permanently open. 'md' denotes the screen size you want the sidebar to be permanently open at (options are: xs, sm, md, lg). make sure you set your column sizes accordingly to accomodate a permanent sidebar. 
+* "sidebar-show-md" - (Optional) tells the sidebar to be permanently open. 'md' denotes the screen size you want the sidebar to be permanently open at (options are: xs, sm, md, lg). make sure you set your column sizes accordingly to accomodate a permanent sidebar. 
 * "col-xs-7", "col-sm-3", "col-md-2" - you can freely set the column size across different screen sizes according to Bootstrap's Grid guidelines
 
