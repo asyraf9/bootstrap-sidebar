@@ -1,5 +1,6 @@
 Changelog:
-v0.1.0
+v0.1.0:
+
 1. Right sidebar now fully tested. make sure your right sidebar is after your 'main' content in your HTML if you want to make it a permanent sidebar at any screen size.
 2. Clicking anywhere outside of the sidebar hides the sidebar (if it is not set to permanent) see index.html
 3. sidebars are now hidden by default, and you can override it by adding a sidebar-show-<size> class (replace size with xs, sm, md, lg as per Bootstrap's convention) see index.html
