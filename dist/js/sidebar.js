@@ -114,15 +114,15 @@
 
   $('html').on('click.bs.sidebar.autohide', function(event){
     var $this = $(event.target);
-    var isButtonOrSidebar = $this.parents('.sidebar, [data-toggle="sidebar"]').length || $this.is('.sidebar, [data-toggle="sidebar"]');
+    var isButtonOrSidebar = $this.is('.sidebar, [data-toggle="sidebar"]') || $this.parents('.sidebar, [data-toggle="sidebar"]').length;
     if (isButtonOrSidebar) {
       return;
     } else {
       var $target = $('.sidebar');
       $target.each(function(i, trgt) {
-        var data = $(trgt).data('bs.sidebar');
-        if(data) {
-          $(trgt).sidebar('hide');
+        var $trgt = $(trgt);
+        if($trgt.data('bs.sidebar') && $trgt.hasClass('sidebar-open')) {
+            $trgt.sidebar('hide');
         }
       })
     }
