@@ -1,5 +1,6 @@
 ###Changelog:
 v0.2.0:
+
 1. CSS overrides to allow unresponsive top navbar menu items with the 'navbar-static' class (refer index.html)
 2. Renamed 'sidebar-show-<size>' to 'sidebar-<size>-show' for consistency with column classes
 
