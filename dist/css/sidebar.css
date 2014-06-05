@@ -18,14 +18,13 @@
 /* sidebar settings */
 .sidebar {
   position: fixed;
+  display: block;
   top: 51px;
   bottom:0;
+  z-index: 1000;
   min-height: 100%;
   max-height: none;
-  z-index: 1000;
-  display: block;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: auto;
 }
 
 .sidebar-left {
@@ -37,7 +36,7 @@
 }
 
 /* css to override hiding the sidebar according to different screen sizes */  
-.row .sidebar.sidebar-left.sidebar-show-xs {
+.row .sidebar.sidebar-left.sidebar-xs-show {
   left: 0;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
@@ -45,7 +44,7 @@
 }
 
 /*right sidebar is untested */
-.row .sidebar.sidebar-right.sidebar-show-xs {
+.row .sidebar.sidebar-right.sidebar-xs-show {
   right: 0;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
@@ -53,7 +52,7 @@
 }  
   
 @media (min-width: 768px) {
-  .row .sidebar.sidebar-left.sidebar-show-sm {
+  .row .sidebar.sidebar-left.sidebar-sm-show {
     left: 0;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
@@ -61,7 +60,7 @@
   }
 
  /*right sidebar is untested */
-  .row .sidebar.sidebar-right.sidebar-show-sm {
+  .row .sidebar.sidebar-right.sidebar-sm-show {
     right: 0;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
@@ -70,13 +69,13 @@
 } 
 
 @media (min-width: 992px) {
-  .row .sidebar.sidebar-left.sidebar-show-md {
+  .row .sidebar.sidebar-left.sidebar-md-show {
     left: 0;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
     -moz-transform: none;
   }
-  .row .sidebar.sidebar-right.sidebar-show-md {
+  .row .sidebar.sidebar-right.sidebar-md-show {
     right: 0;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
@@ -85,13 +84,13 @@
 }
 
 @media (min-width: 1170px) {
-  .row .sidebar.sidebar-left.sidebar-show-lg {
+  .row .sidebar.sidebar-left.sidebar-lg-show {
     left: 0;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
     -moz-transform: none;
   }
-  .row .sidebar.sidebar-right.sidebar-show-lg {
+  .row .sidebar.sidebar-right.sidebar-lg-show {
     right: 0;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
