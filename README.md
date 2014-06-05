@@ -1,4 +1,9 @@
 ###Changelog:
+v0.2.0:
+1. CSS overrides to allow unresponsive top navbar menu items with the 'navbar-static' class (refer index.html)
+2. Renamed 'sidebar-show-<size>' to 'sidebar-<size>-show' for consistency with column classes
+
+
 v0.1.0:
 
 1. Right sidebar now fully tested. make sure your right sidebar is after your 'main' content in your HTML if you want to make it a permanent sidebar at any screen size.
@@ -18,13 +23,14 @@ A responsive sidebar plugin for bootstrap 3. if your menus are too big to fit in
 2. You can set the sidebar to be permanently open for any screen size
 2. You can set the sidebar size for each screen size using standard bootstrap grid classes
 3. Clicking outside of the sidebars closes it automatically (if the sidebar is not open permanently)
-4. Right and Left sidebars now work. 
+4. Right and Left sidebars now work.
+5. CSS overrides for top navbar to allow menu items to stay visible and not responsive when in smaller screens 
 
 ###Current Limitations: 
 
 1. This sidebar assumes you have a fixed top menubar
 2. This sidebar assumes you are using the 'container-fluid' class. use the affix plugin or a normal vertical menu for a fixed-width setup. 
-3. you will have to write some custom css to enable fixed horizontal menu items (ask me if you need help)
+3. ~~you will have to write some custom css to enable fixed horizontal menu items (ask me if you need help)~~
 4. ~~This plugin is only tested for the left sidebar only. support for setting up a right sidebar exists but has never been tested yet.~~ 
 5. ~~Clicking outside the sidebar does not close the sidebar in smaller screens.~~
 6. ~~On larger screens the sidebar is open(visible) by default and there is no way to change this at the moment.~~ 

@@ -2,7 +2,7 @@
 /* toggle button settings */
 /* Note: this disables the navbar-toggle class's hide function. set visibility with the boostrap visible/hidden classes */
 /* Note: this also disables the navbar-header class positioning settings in small screens. */
-.navbar .navbar-header {
+.navbar.navbar-static .navbar-header {
   float:left;
 }
 
