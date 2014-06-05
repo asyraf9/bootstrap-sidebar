@@ -1,6 +1,11 @@
 /* All the default sidebar styles */
 /* toggle button settings */
-/* Note: this disables navbar-toggle class hide function. set visibility with the boostrap visible/hidden classes */
+/* Note: this disables the navbar-toggle class's hide function. set visibility with the boostrap visible/hidden classes */
+/* Note: this also disables the navbar-header class positioning settings in small screens. */
+.navbar .navbar-header {
+  float:left;
+}
+
 .navbar .navbar-toggle.toggle-left {
   float: left;
   margin-left: 15px;

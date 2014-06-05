@@ -31,6 +31,10 @@ A responsive sidebar plugin for bootstrap 3. if your menus are too big to fit in
 
 ###Demo:
 
+view plunker demo here: http://run.plnkr.co/plunks/sA6H7U/
+
+#####OR
+
 open index.html on your browser to checkout the features
 
 ###Usage:
