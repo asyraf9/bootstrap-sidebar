@@ -30,9 +30,11 @@ Current Limitations:
 6. ~~On larger screens the sidebar is open(visible) by default and there is no way to change this at the moment.~~ 
 
 Demo:
+
 open index.html on your browser to checkout the features
 
 Usage:
+
 Usage is almost the same as the horizontal menubar collapse method: define a button on your top menubar that toggles the sidebar on and off like this:
 
 ```html
@@ -62,6 +64,7 @@ Note the important classes:
 * "col-xs-7", "col-sm-3", "col-md-2" - you can freely set the sidebar column sizes across different screen sizes according to Bootstrap's Grid guidelines
 
 Defining permanent sidebars:
+
 To define a sidebar that displays permanently for a certain screen size (in this example, for sizes md and above):
 
 ```html
@@ -79,6 +82,7 @@ make sure your main content area is defined as follows:
 ```
 
 Note the important classes:
+
 1. In the sidebar div:
   * "sidebar-md-show" - tells the sidebar to be permanently open. 'md' refers to the screen size you want the sidebar to be permanently open at (options are: xs, sm, md, lg as per bootstrap 3 conventions). make sure you set your column sizes accordingly to accomodate a permanent sidebar. 
 2. In the main content div:
