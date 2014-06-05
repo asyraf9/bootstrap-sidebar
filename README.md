@@ -2,14 +2,14 @@
 v0.2.0:
 
 1. CSS overrides to allow unresponsive top navbar menu items with the 'navbar-static' class (refer index.html)
-2. Renamed 'sidebar-show-<size>' to 'sidebar-<size>-show' for consistency with column classes
+2. Renamed 'sidebar-show-{{size}}' to 'sidebar-{{size}}-show' for consistency with column classes
 
 
 v0.1.0:
 
 1. Right sidebar now fully tested. make sure your right sidebar is after your 'main' content in your HTML if you want to make it a permanent sidebar at any screen size.
 2. Clicking anywhere outside of the sidebar hides the sidebar (if it is not set to permanent) see index.html
-3. Sidebars are now hidden by default, and you can make it display permanently by adding a sidebar-<size>-show class (replace size with xs, sm, md, lg as per Bootstrap's convention) see index.html. Make sure your 'main' content area are classed properly with 'col-<size>-#' and 'col-<size>-offset-#' so that the main content is displayed properly when the sidebar is permanently open. 
+3. Sidebars are now hidden by default, and you can make it display permanently by adding a sidebar-{{size}}-show class (replace size with xs, sm, md, lg as per Bootstrap's convention) see index.html. Make sure your 'main' content area are classed properly with 'col-{{size}}-#' and 'col-{{size}}-offset-#' so that the main content is displayed properly when the sidebar is permanently open. 
 
 bootstrap-sidebar
 =================
