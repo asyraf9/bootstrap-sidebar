@@ -1,4 +1,4 @@
-Changelog:
+###Changelog:
 v0.1.0:
 
 1. Right sidebar now fully tested. make sure your right sidebar is after your 'main' content in your HTML if you want to make it a permanent sidebar at any screen size.
@@ -12,7 +12,7 @@ A responsive sidebar plugin for bootstrap 3. if your menus are too big to fit in
 (NOTE: Contributions are welcome! please issue a Pull Request. I'll include tests soon, please include tests in your code as well!)
 
 
-Features:
+###Features:
 
 1. Hardware accelerated slide-in animation
 2. You can set the sidebar to be permanently open for any screen size
@@ -20,7 +20,7 @@ Features:
 3. Clicking outside of the sidebars closes it automatically (if the sidebar is not open permanently)
 4. Right and Left sidebars now work. 
 
-Current Limitations: 
+###Current Limitations: 
 
 1. This sidebar assumes you have a fixed top menubar
 2. This sidebar assumes you are using the 'container-fluid' class. use the affix plugin or a normal vertical menu for a fixed-width setup. 
@@ -29,11 +29,11 @@ Current Limitations:
 5. ~~Clicking outside the sidebar does not close the sidebar in smaller screens.~~
 6. ~~On larger screens the sidebar is open(visible) by default and there is no way to change this at the moment.~~ 
 
-Demo:
+###Demo:
 
 open index.html on your browser to checkout the features
 
-Usage:
+###Usage:
 
 Usage is almost the same as the horizontal menubar collapse method: define a button on your top menubar that toggles the sidebar on and off like this:
 
@@ -56,14 +56,14 @@ then define your sidebar column as:
 </div>
 ```
 
-Note the important classes: 
+#####Note the important classes: 
 
 * "sidebar" - main css class
 * "sidebar-left" - to define the position of your sidebar and slide-in slide-out animations. Options are: sidebar-left, sidebar-right
 * "sidebar-animation" - (Optional) to tell sidebar to animate sliding in and out.
 * "col-xs-7", "col-sm-3", "col-md-2" - you can freely set the sidebar column sizes across different screen sizes according to Bootstrap's Grid guidelines
 
-Defining permanent sidebars:
+###Defining permanent sidebars:
 
 To define a sidebar that displays permanently for a certain screen size (in this example, for sizes md and above):
 
@@ -81,7 +81,7 @@ make sure your main content area is defined as follows:
 </div>
 ```
 
-Note the important classes:
+#####Note the important classes:
 
 1. In the sidebar div:
   * "sidebar-md-show" - tells the sidebar to be permanently open. 'md' refers to the screen size you want the sidebar to be permanently open at (options are: xs, sm, md, lg as per bootstrap 3 conventions). make sure you set your column sizes accordingly to accomodate a permanent sidebar. 
