@@ -15,7 +15,7 @@ bootstrap-sidebar
 =================
 
 A responsive sidebar plugin for bootstrap 3. if your menus are too big to fit into a horizontal menubar, or you need to have a responsive sidebar that is compatible with bootstrap, then this is the plugin for you. 
-(NOTE: Contributions are welcome! please issue a Pull Request. I'll include tests soon, please include tests in your code as well!)
+(NOTE: Contributions are welcome! please issue a Pull Request)
 
 
 ###Features:
@@ -43,6 +43,16 @@ view plunker demo here: http://run.plnkr.co/plunks/sA6H7U/
 #####OR
 
 open index.html on your browser to checkout the features
+
+###Installation:
+
+Install using bower:
+
+```
+bower install bootstrap-sidebar
+```
+
+or download a zip copy of this repo 
 
 ###Usage:
 
