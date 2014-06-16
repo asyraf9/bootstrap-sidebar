@@ -26,7 +26,7 @@
 
   Sidebar.prototype.show = function () {
     if (this.transitioning || this.$element.hasClass('sidebar-open')) return
-    
+
 
     var startEvent = $.Event('show.bs.sidebar')
     this.$element.trigger(startEvent);
@@ -60,7 +60,7 @@
     this.$element
       .removeClass('sidebar-open')
 
-    this.transitioning = 1 
+    this.transitioning = 1
 
     var complete = function () {
       this.transitioning = 0
@@ -95,7 +95,7 @@
 
   $.fn.sidebar.Constructor = Sidebar
 
-  $.fn.collapse.noConflict = function () {
+  $.fn.sidebar.noConflict = function () {
     $.fn.sidebar = old
     return this
   }
@@ -128,4 +128,3 @@
     }
   });
 }(jQuery);
-
