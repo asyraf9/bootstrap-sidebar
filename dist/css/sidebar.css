@@ -146,13 +146,12 @@
         transform: translate(0,0);
     }
 
-/* TODO: TEST THIS! Right panel positioning classes*/
 .sidebar.sidebar-right {
-    -webkit-transform: translate(-100%,0);
-    -moz-transform: translate(-100%,0);
-    -ms-transform: translate(-100%,0);
-    -o-transform: translate(-100%,0);
-    transform: translate(-100%,0);
+    -webkit-transform: translate(100%,0);
+    -moz-transform: translate(100%,0);
+    -ms-transform: translate(100%,0);
+    -o-transform: translate(100%,0);
+    transform: translate(100%,0);
 }
 
     .sidebar.sidebar-right.sidebar-open {
