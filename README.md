@@ -81,7 +81,7 @@ then define your sidebar column as:
 
 * "sidebar" - main css class
 * "sidebar-left" - to define the position of your sidebar and slide-in slide-out animations. Options are: sidebar-left, sidebar-right
-* "sidebar-animation" - (Optional) to tell sidebar to animate sliding in and out.
+* "sidebar-animate" - (Optional) to tell sidebar to animate sliding in and out.
 * "col-xs-7", "col-sm-3", "col-md-2" - you can freely set the sidebar column sizes across different screen sizes according to Bootstrap's Grid guidelines
 
 ###Defining permanent sidebars:
