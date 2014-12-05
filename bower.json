@@ -5,7 +5,10 @@
     "Asyraf <asyraf9@gmail.com>"
   ],
   "description": "a sidebar plugin for bootstrap 3",
-  "main": "dist/js/sidebar.js",
+  "main": [
+    "dist/js/sidebar.js",
+    "dist/css/sidebar.css"
+  ],
   "moduleType": [
     "globals"
   ],
