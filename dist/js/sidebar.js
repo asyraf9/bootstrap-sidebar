@@ -52,9 +52,7 @@
 
   Sidebar.prototype.hide = function () {
     if (this.transitioning || !this.$element.hasClass('sidebar-open')) return
-
-    var startEvent = $.Event('hide.bs.sidebar')
-    this.$element.trigger(startEvent)
+    
     if(startEvent.isDefaultPrevented()) return
 
     this.$element
